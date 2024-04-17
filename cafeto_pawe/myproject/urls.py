@@ -16,7 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from marketplace import views as mk_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', mk_views.home_view)
 ]
